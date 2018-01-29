@@ -1,0 +1,28 @@
+@import "../mine/icon/icon.wxss";
+.login_btn,.xz{
+  height: 80rpx;
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  margin-top: 20rpx;
+  line-height: 80rpx;
+}
+.longin_img{
+  height: 60rpx;
+  width: 60rpx;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+}
+.login_btn text,.xz text{
+  color: #898989;
+  font-size: 30rpx;
+}
+.login_btn p,.xz p{
+  float: right;
+  color: #898989;
+}
+.iconbox{
+  margin-top: 40rpx;
+}

@@ -1,0 +1,9 @@
+<view class='gzimg'>
+  <image src="../../images/other/header_cry_icon.png"></image>
+</view>
+<view class='txt'>
+  <text>快快登录吧，关注百思最in牛人</text>
+  <text>好友动态让你过把瘾儿~</text>
+  <text>欧耶~</text>
+</view>
+<button class='btn' catchtap='toLogin'>立即登录/注册</button>

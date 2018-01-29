@@ -1,0 +1,59 @@
+ <template name='indexTemplate'> 
+		<view class='indexContainer'>
+		  <view class='header'>
+		  <!-- 用户名开始 -->
+			<image class='userimg' src='{{item.profile_image}}'></image>
+			<view class='userinfo'>
+				<text class='name'>{{item.name}}</text>
+				<text class='uptime'>{{item.create_time}}</text>
+			</view>
+			<image class='user-icon'  mode="center" src='/images/index/morebtnnormal.png'></image>
+		  </view>
+			<!-- 用户名结束 -->
+			<!-- 正文开始 -->
+			<view class='conter'>
+			  <text>{{item.text}}</text>
+			</view>
+			<!-- 正文结束 -->
+
+			<!-- 正文附加照片，视频，音频开始 -->
+			<view class='movie'>	
+				<view class='pic' hidden='{{(item.image1 && (!item.videouri && !item.voiceuri))? false : true}}'>
+          <image hidden='{{true}}' src='{{item.image1}}' mode='scaleToFill' style='width:{{item.width}}rpx;height:{{item.height}}rpx'></image>
+        </view>
+
+				<view class='video' hidden='{{item.videouri? false : true}}'>
+          <video id='{{item.id}}' src='{{item.videouri}}' style='width:{{item.width}}rpx;height:{{item.height}}rpx'></video>
+        </view>
+
+				<view class='audio' hidden='{{item.voiceuri? false : true}}'>
+          <audio id='{{item.id}}' src='{{item.voiceuri}}' poster='{{item.bimageuri}}' author='{{item.screen_name}}' bindplay='audioplay' controls></audio>
+        </view>
+			</view>
+			<!-- 正文附加照片，视频，音频结束 -->
+
+			<!-- 观众活动栏开始 -->
+				<view class='netFriend-con'>
+				   <view class='good'>
+					  <image class='netFriend-icon' src='/images/index/mainCellDing.png'></image>
+					  <text class='num'>{{item.love}}</text>
+				   </view> 
+				   <view class='good'>
+					  <image class='netFriend-icon' src='/images/index/mainCellCai.png'></image>
+					  <text class='num'>{{item.hate}}</text>
+				   </view> 
+				   <view class='good'>
+					  <image class='netFriend-icon' src='/images/index/mainCellShare.png'></image>
+					  <text class='num'>{{item.repost}}</text>
+				   </view> 
+				   <view class='good' catchtap='pinglun'>
+					  <image class='netFriend-icon' src='/images/index/mainCellComment.png'></image>
+					  <text class='num'>{{item.comment}}</text>
+				   </view> 
+				</view>
+
+			<!-- 观众活动栏结束 -->
+
+		 
+		</view>
+ </template> 

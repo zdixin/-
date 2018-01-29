@@ -1,0 +1,41 @@
+.right-box{
+  display: flex;
+  flex-direction: row;
+  height: 130rpx;
+  background: white;
+  border-bottom:2px solid #f8f7f7;
+  margin-left: 150rpx;
+  width: 100%;
+}
+.userimg{
+  height: 120rpx;
+  width: 120rpx;
+  margin: 10rpx;
+  vertical-align: middle;
+}
+.user{
+  display: flex;
+  flex-direction: column;
+  margin-top:20rpx; 
+  width: 320rpx;
+  
+}
+.username{
+  font-size: 30rpx;
+}
+.num{
+  font-size: 22rpx;
+  margin-top: 16rpx;
+  color: #777777;
+}
+.addnum{
+  font-size: 28rpx;
+  border: 1px solid #777777;
+  height: 50rpx;
+  text-align: center;
+  color: red;
+  border-radius: 10rpx;
+  width: 120rpx;
+  line-height: 50rpx;
+  margin-top: 35rpx;
+}

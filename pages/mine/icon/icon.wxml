@@ -1,0 +1,7 @@
+ <template name="iconTemplate"> 
+  <view class='icon'>
+    <image src='{{item.icon}}'></image>
+    <text class='txt'>{{item.name}}</text>
+  </view>
+
+ </template> 

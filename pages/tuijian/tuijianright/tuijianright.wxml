@@ -1,0 +1,11 @@
+ <template name="tuijianrightTPL"> 
+   <view class='right-box'> 
+    <image class="userimg" src="{{item.header}}"></image>
+    <view class='user'>
+      <text class='username'>{{item.screen_name}}</text>
+      <text class='num'>{{item.fans_count}}人关注</text>
+    </view>
+    <text class='addnum'>+关注</text>
+   </view> 
+
+ </template> 

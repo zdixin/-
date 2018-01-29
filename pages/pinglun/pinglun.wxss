@@ -1,0 +1,62 @@
+.hot{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx;
+}
+.hot_pl{
+  font-size: 32rpx;
+  color: #898989;
+}
+.hotlist image{
+  display: inline-block;
+  height: 100rpx;
+  width: 100rpx;
+  vertical-align: middle;
+  border-radius:50%; 
+}
+.hot_name{
+  display: inline-block;
+  font-size: 32rpx;
+  color: #4373a9;
+  margin-left: 15rpx;
+}
+.right{
+  display: inline-block;
+  float: right;
+}
+.hot_num{
+  font-size: 24rpx;
+  color: #898989;
+}
+.right image{
+  height: 60rpx;
+  width: 60rpx;
+  vertical-align: middle;
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  margin-bottom:40rpx; 
+}
+.bottom p{
+  display:inline-block;
+  height: 35rpx;
+  width: 80rpx;
+  background: #b5c7dd;
+  color: white;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 35rpx;
+  vertical-align: middle;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+}
+.hot_con{
+  font-size: 34rpx;
+  width: 70%;
+}
+.newlist{
+  border-bottom: 1px solid #ccc;
+  margin: 20rpx;
+  
+}

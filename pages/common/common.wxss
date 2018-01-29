@@ -1,0 +1,82 @@
+page{
+  background: #eaeaea;
+}
+.indexContainer{
+  background: white;
+  border: 1px solid #dddcdc;
+  margin: 10rpx;
+} 
+.header{
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx;
+} 
+.userimg{
+  height: 60rpx;
+  width: 60rpx;
+}
+.userinfo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rpx;
+}
+.name{
+  font-size: 30rpx;
+  display: block;
+}
+.uptime{
+  font-size: 20rpx;
+  display: block;
+}
+.user-icon{
+  height: 60rpx;
+  width: 60rpx;
+  float: right;
+}
+.conter{
+  margin: 20rpx 10rpx;
+  font-size: 30rpx;
+}
+.movie{
+  margin: 10rpx;
+}
+.pic{
+  margin: 0 auto;
+}
+.pic image{
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.video video{
+  display: inline-block;
+  max-width: 100%;
+  min-width: 70%;
+  height: auto;
+  }
+.netFriend-con{
+  display: flex;
+  flex-direction: row;
+  border-top:1px solid #dddcdc;
+  height: 80rpx;
+}
+.good{
+  width: 25%;
+  border-right: 1px solid #dddcdc;
+  height: 60rpx;
+  text-align: center;
+  margin-top: 10rpx;
+  line-height: 60rpx;
+  vertical-align: middle;
+}
+.netFriend-icon{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.num{
+  font-size: 25rpx;
+  margin-left: 10rpx;
+}

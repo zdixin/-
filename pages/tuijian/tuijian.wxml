@@ -1,0 +1,16 @@
+<import src="tuijianleft/tuijianleft.wxml"></import>
+<import src="tuijianright/tuijianright.wxml"></import>
+
+<view class='tuijiantemplate'>
+  <scroll-view class='leftBox'>
+  <block wx:for="{{leftTapArray}}">
+    <template is="tuijianleftTPL" data="{{item:item}}"></template>
+  </block>
+  </scroll-view>
+
+  <scroll-view class='right-con'  scroll-y="true" bindscrolltolower="addMoreData" style="height:{{winHeight}}px">
+  <block wx:for="{{rightTapArray}}">
+    <template is="tuijianrightTPL" data="{{item:item}}"></template>
+  </block>
+  </scroll-view>
+</view>

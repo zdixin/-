@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/baisi/baisi",
+    "pages/pinglun/pinglun",
+    "pages/mine/mine",
+    "pages/guanzhu/guanzhu",
+    "pages/tuijian/tuijian",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login"
+    
+  ],
+  "window": {
+    "navigationBarTitleText": "百思"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/baisi/baisi",
+        "text": "精华",
+        "iconPath": "images/tabBar/tabBar_essence_click_icon.png",
+        "selectedIconPath": "images/tabBar/tabBar_essence_icon.png"
+      },
+      {
+        "pagePath": "pages/tuijian/tuijian",
+        "text": "推荐关注",
+        "iconPath": "images/tabBar/tabBar_new_click_icon.png",
+        "selectedIconPath": "images/tabBar/tabBar_new_icon.png"
+      },
+      {
+        "pagePath": "pages/guanzhu/guanzhu",
+        "text": "关注",
+        "iconPath": "images/tabBar/tabBar_friendTrends_click_icon.png",
+        "selectedIconPath": "images/tabBar/tabBar_friendTrends_icon.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我",
+        "iconPath": "images/tabBar/tabBar_me_click_icon.png",
+        "selectedIconPath": "images/tabBar/tabBar_me_icon.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000
+  }
+}

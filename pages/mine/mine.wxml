@@ -1,0 +1,21 @@
+<view class='login_btn'>
+  <image class='longin_img' src='../../images/other/setup-head-default.png'></image>
+  <text>登录/注册</text>
+  <p>></p>
+</view>
+
+<view class='xz'>
+  <text>离线下载</text>
+  <p>></p>
+</view>
+
+<!-- 引进icon模版 -->
+<import src="../mine/icon/icon.wxml"></import>
+
+   <view class='iconbox'> 
+  <block wx:for="{{iconlist}}">
+    <template is="iconTemplate" data="{{item:item}}"></template>
+    </block>
+   </view> 
+  
+

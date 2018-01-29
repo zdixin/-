@@ -1,0 +1,19 @@
+<view class="hot">
+  <text class='hot_pl'>最新评论</text>
+</view>
+<block wx:for="{{pinglunlist}}">
+<view class='newlist'>
+  <view class='hotlist'>
+      <image src='{{item.user.profile_image}}'></image>
+      <text class='hot_name'>{{item.user.username}}</text>
+      <view class='right'>
+        <text class='hot_num'>{{item.user.total_cmt_like_count}}</text>
+        <image src='../../images/index/mainCellDing.png'></image>
+      </view>
+    </view>
+    <view class='bottom'>
+      <p>{{item.like_count}}</p> 
+      <text class="hot_con">{{item.content}}</text>
+    </view>
+</view>
+</block>

@@ -1,0 +1,68 @@
+<import src='../common/common.wxml'></import>
+
+<view class='Top-tap'>
+ <view class='top-item-tap {{item.active?"active":""}}' wx:for="{{topTap}}" wx:for-index="idx" data-idx="{{idx}}" data-name="{{item.name}}" catchtap='switchTap'>{{item.name}}</view>
+</view>
+
+<!-- 正文内容添加开始 -->
+  <swiper class='swiper' current='{{currentTopItem}}' bindchange='bindchange' duration='300' style='height:{{swiperHeight}}px'>
+  <!-- 全部 -->
+  <swiper-item > 
+    <scroll-view class='scrollView' bindscrolltolower="loadMoreData" scroll-y='true'>
+      <block wx:for="{{allDatalist}}">
+         <navigator url='detail?id={{item.id}}'> 
+          <template is="indexTemplate" data="{{item:item}}"></template>
+         </navigator> 
+      </block>
+    </scroll-view>
+  </swiper-item>
+
+<!-- 视频 -->
+  <swiper-item>
+     <scroll-view class='scrollView' bindscrolltolower="loadMoreData" scroll-y='true'>
+      <block wx:for="{{videoDatalist}}">
+         <navigator url='detail?id={{item.id}}'> 
+          <template is="indexTemplate" data="{{item:item}}"></template>
+         </navigator> 
+      </block>
+    </scroll-view>
+  </swiper-item>
+
+
+
+<!-- 图片 -->
+  <swiper-item>
+     <scroll-view class='scrollView' bindscrolltolower="loadMoreData" scroll-y='true'>
+      <block wx:for="{{picDatalist}}">
+         <navigator url='detail?id={{item.id}}'> 
+          <template is="indexTemplate" data="{{item:item}}"></template>
+         </navigator> 
+      </block>
+    </scroll-view>
+  </swiper-item>
+
+  <!-- 段子 -->
+  <swiper-item>
+     <scroll-view class='scrollView' bindscrolltolower="loadMoreData" scroll-y='true'>
+      <block wx:for="{{textDatalist}}">
+         <navigator url='detail?id={{item.id}}'> 
+          <template is="indexTemplate" data="{{item:item}}"></template>
+         </navigator> 
+      </block>
+    </scroll-view>
+  </swiper-item>
+
+  <!-- 音频 -->
+  <swiper-item>
+     <scroll-view class='scrollView' bindscrolltolower="loadMoreData" scroll-y='true'>
+      <block wx:for="{{audioDatalist}}">
+         <navigator url='detail?id={{item.id}}'> 
+          <template is="indexTemplate" data="{{item:item}}"></template>
+         </navigator> 
+      </block>
+    </scroll-view>
+  </swiper-item>
+  
+  </swiper>
+
+<!-- 正文内容添加结束 -->

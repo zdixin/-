@@ -1,0 +1,10 @@
+@import "tuijianleft/tuijianleft.wxss";
+@import "tuijianright/tuijianright.wxss";
+.tuijiantemplate{
+  display: flex;
+  flex-direction: row;
+}
+.right-con{
+  display: flex;
+  flex-direction: column;
+}

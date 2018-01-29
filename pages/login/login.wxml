@@ -1,0 +1,11 @@
+<view class="loginbox">
+  <input type='text' placeholder='请输入用户名'></input>
+  <input type='password' placeholder='请输入密码'></input>
+</view>
+
+<button class='btn' catchtap='Loging'>登录</button>
+
+<view class='txt'>
+  <text class='zc'>立即注册</text>
+  <text class='wj'>忘记密码</text>
+</view>

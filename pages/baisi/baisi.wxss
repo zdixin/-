@@ -1,0 +1,28 @@
+@import '../common/common.wxss';
+.Top-tap{
+  display: flex;
+  flex-direction: row;
+  background: white;
+}
+.top-item-tap{
+  width: 20%;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+.swiper{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.scrollView{
+  height: 100%;
+}
+.active{
+  color: red;
+  border-bottom:1px solid red; 
+}

@@ -1,0 +1,3 @@
+<template name="tuijianleftTPL"> 
+   <view class='left-txt "{{item.active?"active":""}}"' data-name="{{item.name}}" data-leftId="{{item.id}}" data-index='{{item.index}}' catchtap='leftTap'>{{item.name}}</view>
+ </template> 
